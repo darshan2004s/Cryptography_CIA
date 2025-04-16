@@ -1,0 +1,50 @@
+1. Atbash Cipher
+A symmetric cipher that maps each letter of the alphabet to its reverse counterpart. For example, 'A' is replaced by 'Z', 'B' by 'Y', 'C' by 'X', and so on. It is a fixed substitution cipher, meaning it does not require a key.
+
+2. August Cipher
+A variation of the Caesar cipher with a fixed shift of +1. Each letter in the plaintext is replaced by the next letter in the alphabet, with 'Z' wrapping around to 'A'. It can be used for basic encryption but is not secure for serious use.
+
+3. Affine Cipher
+Encrypts each letter in the plaintext using the formula 
+𝐸(𝑥)=(𝑎⋅𝑥+𝑏)mod26
+E(x)=(a⋅x+b)mod26, where 
+a and b are keys,
+x is the position of the letter in the alphabet. The key 𝑎 a must be coprime with 26. It is more complex than a Caesar cipher but still vulnerable to cryptanalysis.
+
+4. Vigenère Cipher
+Uses a repeating keyword to apply a series of Caesar shifts for each letter of the plaintext. The shift for each letter is determined by the corresponding letter in the keyword. It provides more security than simple substitution ciphers but is still vulnerable to attacks like Kasiski examination.
+
+5. Gronsfeld Cipher
+A variant of the Vigenère cipher, this cipher uses a numeric key instead of a word. Each digit in the key determines the Caesar shift for the corresponding letter in the plaintext. It is useful for encoding numbers but is still not secure against cryptanalysis.
+
+6. Beaufort Cipher
+This cipher is similar to the Vigenère cipher but uses a different encryption formula: 
+𝐶=(𝐾−𝑃+26)mod26
+C=(K−P+26)mod26, where 
+𝐶
+C is the ciphertext, 
+𝐾
+K is the key, and 
+𝑃
+P is the plaintext. It provides a different method for encrypting text, making it harder to crack using traditional Vigenère cipher techniques.
+
+7. Autoclave Cipher
+An extension of the Vigenère cipher, where the plaintext itself is appended to the key to form a longer keystream. This offers slightly better security than the standard Vigenère cipher but can still be vulnerable to cryptanalysis if the ciphertext is long enough.
+
+8. N-gram Operations
+N-grams are sequences of 'n' consecutive characters extracted from a given text. This technique is helpful in cryptanalysis for frequency analysis, as analyzing the frequency of different N-grams can reveal patterns in the ciphertext.
+
+9. Hill Cipher
+Encrypts blocks of text using matrix multiplication. The key is a square matrix, and the plaintext is split into groups of letters that are represented as vectors. The encryption is performed by multiplying these vectors with the key matrix. It is a polygraphic cipher, stronger than monoalphabetic ciphers but still vulnerable to attacks under certain conditions.
+
+10. Rail Fence Cipher
+Text is written in a zigzag pattern across multiple "rails" (rows) and then read off row by row. The number of rails determines the complexity of the cipher. It rearranges the order of characters, making it harder to decipher at first glance, but can still be cracked with enough analysis.
+
+11. Route Cipher
+Characters are arranged in a grid, and then read according to a predefined pattern (e.g., column-wise, spiral). This form of transposition cipher rearranges the characters based on their position in the grid and is relatively simple to implement but can be deciphered with enough analysis.
+
+12. Myszkowski Cipher
+Uses a keyword to define the reading order of columns in a grid. The columns with the same key letter are read together in sequence. This is a more complex form of transposition cipher as it uses the keyword to determine the order, making it harder to decipher.
+
+13. Caesar Cipher
+A classic substitution cipher where each letter of the plaintext is shifted by a fixed number of positions down the alphabet. It is one of the simplest and oldest ciphers, making it easy to break, but it serves as an important historical foundation for cryptography.
