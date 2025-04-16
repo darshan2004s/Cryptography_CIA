@@ -1,15 +1,20 @@
+
 1. Atbash Cipher
 
 Input: HELLO
 
 Output: SVOOL
+
 -----------------------------------------------------
+
 2. August Cipher
 
 Input: HELLO
 
 Output: IFMMP
+
 -----------------------------------------------------
+
 3. Affine Cipher
 
 Input: HELLO
@@ -17,7 +22,9 @@ Input: HELLO
 Key: a = 5, b = 8
 
 Output: RCLLA
+
 -----------------------------------------------------
+
 4. Vigenère Cipher
 
 Input: HELLO
@@ -25,7 +32,9 @@ Input: HELLO
 Key: KEY
 
 Output: RIJVS
+
 -----------------------------------------------------
+
 5. Gronsfeld Cipher
 
 Input: HELLO
@@ -33,7 +42,9 @@ Input: HELLO
 Key: 31415
 
 Output: KEOOR
+
 -----------------------------------------------------
+
 6. Beaufort Cipher
 
 Input: HELLO
@@ -41,7 +52,9 @@ Input: HELLO
 Key: KEY
 
 Output: DVBXX
+
 -----------------------------------------------------
+
 7. Autoclave Cipher
 
 Input: HELLO
@@ -51,7 +64,9 @@ Key: KEY
 Extended Key: KEYHELLO
 
 Output: RIJVG
+
 -----------------------------------------------------
+
 8. N-gram Operations
 
 Input: HELLO
@@ -59,7 +74,9 @@ Input: HELLO
 N: 2
 
 Output: [HE, EL, LL, LO]
+
 -----------------------------------------------------
+
 9. Hill Cipher
 
 Input: ACT
@@ -70,7 +87,9 @@ Key Matrix:
 [13 16 10]  
 [20 17 15]
 Output: POH
+
 -----------------------------------------------------
+
 10. Rail Fence Cipher
 
 Input: RAILFENCECIPHER
@@ -78,7 +97,9 @@ Input: RAILFENCECIPHER
 Rails: 3
 
 Output: RECNFIEAHPRLCIE
+
 -----------------------------------------------------
+
 11. Route Cipher
 
 Input: ROUTECIPHEREXAMPLE
@@ -86,7 +107,9 @@ Input: ROUTECIPHEREXAMPLE
 Grid: 4x5
 
 Output: RCIREOHTXEPMAEXULCX
+
 -----------------------------------------------------
+
 12. Myszkowski Cipher
 
 Input: MYSZKOWSKICIPHEREXAMPLE
@@ -94,7 +117,9 @@ Input: MYSZKOWSKICIPHEREXAMPLE
 Key: ZEBRAS
 
 Output: MKCRISZPYOOEXWHSKACMTE
+
 -----------------------------------------------------
+
 13. Caesar Cipher
 
 Input: HELLO
@@ -102,4 +127,5 @@ Input: HELLO
 Shift: 3
 
 Output: KHOOR
+
 -----------------------------------------------------
