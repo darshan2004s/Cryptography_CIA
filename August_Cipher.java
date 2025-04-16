@@ -1,6 +1,5 @@
 public class AugustCipher {
 
-    // Encrypts by shifting each alphabet character one position forward
     public static String encrypt(String input) {
         StringBuilder result = new StringBuilder();
 
@@ -10,14 +9,13 @@ public class AugustCipher {
             } else if (Character.isLowerCase(ch)) {
                 result.append((char) ((ch - 'a' + 1) % 26 + 'a'));
             } else {
-                result.append(ch); // Preserve non-alphabetic characters
+                result.append(ch); 
             }
         }
 
         return result.toString();
     }
 
-    // Decrypts by shifting each alphabet character one position backward
     public static String decrypt(String input) {
         StringBuilder result = new StringBuilder();
 
@@ -27,7 +25,7 @@ public class AugustCipher {
             } else if (Character.isLowerCase(ch)) {
                 result.append((char) ((ch - 'a' - 1 + 26) % 26 + 'a'));
             } else {
-                result.append(ch); // Preserve non-alphabetic characters
+                result.append(ch); 
             }
         }
 
